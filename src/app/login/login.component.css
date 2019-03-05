@@ -1,0 +1,56 @@
+
+body {
+	background-image: url('../../assets/img/login-background.jpg'); 
+ 	background-size: cover;
+}
+
+.login-box {
+	position: absolute;
+	top:50%;
+	left:50%;
+	transform: translate(-50%, -50%);
+	width: 320px;
+	height: 530px;
+	box-sizing: border-box;
+	background: rgba(0,0,0,0.5);	
+}
+
+#user-img {
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	overflow: hidden;
+	position: absolute;
+	top: calc(-100px/ 2);
+	left: calc(50% - 50px);
+}
+
+.login-box h2 {
+	margin-top: 40px;
+	margin-left: 20px;
+	color: #96E2A6;
+}
+
+.form-group>label {
+	color: #96E2A6;
+}
+
+.form-group:first-child label{
+	margin-top: -10px;
+}
+
+.form-group {
+	width: 300px;
+	padding-left: 20px;
+}
+
+input[type=submit] {
+	position: absolute;
+	right:10px;
+	bottom: 10px;
+}
+
+
+
+
+

@@ -1,0 +1,58 @@
+@import "~bootstrap/dist/css/bootstrap.min.css";
+@import "~font-awesome/css/font-awesome.min.css";
+
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width:100%;
+    font-family: sans-serif;
+}
+
+#header {
+    height:50px;
+    width:100%;
+    top:0px;
+    left:0px;
+    background: #007bff;
+    position:fixed;
+
+    form ul li a{
+        
+    }
+}
+
+#footer {
+    height:50px;
+    width:100%;
+    bottom:0px;
+    left:0px;
+    background: #CCCCCC;
+    position:fixed;
+}
+
+#content {
+    position:absolute;
+    top:50px;
+    bottom:50px;
+	width:100%;
+    overflow:auto;
+}
+
+.ng-valid[required], .ng-valid.required  {
+	border-style:none;
+  border-left: 5px solid #42A948; /* green */
+}
+
+.ng-invalid:not(form)  {
+  border-style:none;
+  border-left: 5px solid #a94442; /* red */
+}
+
+

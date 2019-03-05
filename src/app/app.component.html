@@ -1,0 +1,45 @@
+	<body>
+		<div *ngIf="loading" class="my-overlay">
+			<img id="loadingImg" src="../assets/img/loading.svg" />
+		</div>
+		<div id="header">
+			<nav class="navbar navbar-expand-lg navbar-light bg-primary">
+		  		<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="true" aria-label="Toggle navigation">
+		    		<span class="navbar-toggler-icon"></span>
+		  		</button>
+		  		<a class="navbar-brand" href="#" *ngIf="loginScreen">Credit</a>
+		  		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+		    		<ul class="navbar-nav mr-auto" *ngIf="loginScreen">
+		      		<li class="nav-item active">
+		        		<a class="nav-link" href="#">Home</a>
+		      		</li>
+				      <li class="nav-item">
+				        <a class="nav-link" href="#">My overview</a>
+				      </li>
+				      <li class="nav-item">
+				        <a class="nav-link disabled" href="#">Disabled</a>
+				      </li>
+				    </ul>	
+	  			</div>
+			</nav>
+			<form class="login form-inline my-2 my-lg-0" name="form" (ngSubmit)="f.form.valid && login()" #f="ngForm" novalidate>
+					<input class="form-control mr-sm-2" name="username" type="text" placeholder="username" [(ngModel)]="model.username" #username="ngModel">
+					<input class="form-control mr-sm-2" type="text" placeholder="password" [(ngModel)]="model.password" name="password">
+					<button class="btn btn-success my-2 my-sm-0" type="submit" value="Login">Login</button>
+					<ul class="navbar-nav mr-auto">
+						<li class="nav-item">
+							 <a class="nav-link" href="#">Forgot Password?</a>
+					 </li>
+					</ul>
+			</form>
+		</div>
+		<div id="content">
+			<router-outlet></router-outlet>
+		</div>
+		<div id="footer">
+			<p> &copy; Alon Abramovich </p>
+		</div>
+	</body>
+  
+  
+
